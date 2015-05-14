@@ -59,6 +59,11 @@ Template.channel.helpers({
     return ppl;
   }
 });
+Template.channel.events({
+  $('picture').on("click", function(){
+    $( this ).remove(); 
+  });
+});
 
 Template.messageForm.events({
   'keydown textarea': function(event, instance) {
