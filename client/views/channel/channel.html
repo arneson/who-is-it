@@ -4,9 +4,12 @@
   {{/contentFor}}
   <div id="gameboard">
       {{#each people}}
-        <div class="picture"><p>{{url}}</p></div>
+        <div class="picture"><img src="/images/{{url}}"/></div>
       {{/each}} 
   </div>
+  {{#contentFor 'footer'}}
+  <div id="chat">
+  <div  id="spacer"></div>
   <ul>
     {{#each messages}}
     {{#if date}}
@@ -23,7 +26,7 @@
     </li>
     {{/each}}
   </ul>
-  {{#contentFor 'footer'}}
+  </div>
   {{> messageForm}}
   {{/contentFor}}
 

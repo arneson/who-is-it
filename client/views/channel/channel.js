@@ -77,6 +77,9 @@ Template.messageForm.events({
       });
       // Restore the autosize value.
       instance.$('textarea').css({height: 37});
+      var objDiv = document.getElementById('chat');
+      //objDiv.scrollTop = objDiv.scrollHeight;
+      objDiv.scrollTo(objDiv.scrollHeight);
       window.scrollTo(0, document.body.scrollHeight);
     }
     $('article').css({'padding-bottom': $('footer').outerHeight()});
