@@ -20,7 +20,7 @@ Template.home.helpers({
     return _id == this._id ? 'active' : '';
   },
   people: function(){
-    ppl = [{name:'bengt'},{name:'pelle'},{name:'åke'},{name:'carl'},{name:'sven'}];
+    ppl = [{url:'bengt'},{name:'pelle'},{name:'åke'},{name:'carl'},{name:'sven'}];
     return ppl;
   }
 });

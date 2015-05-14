@@ -18,9 +18,11 @@
     {{> loginButtons}}
   </div>
   {{/contentFor}}
-  {{#contentFor 'article'}}
-  {{> gameGrid}}
-  {{/contentFor}}
+<div id="gameboard">
+    {{#each people}}
+      <div class="picture"><p>{{url}}</p></div>
+    {{/each}} 
+  </div>
 </template>
 
 <template name="channelForm">
@@ -31,13 +33,4 @@
       <input id="name" type="text" autocomplete="off">
     </div>
   </form>
-</template>
-
-<template name="gameGrid">
-
-  <div id="gameboard">
-    {{#each people}}
-      <div class="picture">{{name}}<div>
-    {{/each}} 
-  </div>
 </template>

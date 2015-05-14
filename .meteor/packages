@@ -6,6 +6,7 @@
 
 meteor-platform
 iron:router
+autopublish
 markdown
 accounts-password
 accounts-ui
