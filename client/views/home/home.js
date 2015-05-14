@@ -1,8 +1,6 @@
 Template.home.onCreated(function() {
   this.subscribe('channels');
   this.subscribe('allUserNames');
-  var api_key = '91691550cb05ecf6c33cbe6c973dc91f';
-  $.get('https://api.themoviedb.org/3/movie/550?api_key='+api_key,function(data){console.log('actually worked')});
 });
 
 Template.home.helpers({
@@ -20,6 +18,10 @@ Template.home.helpers({
   active: function() {
     var _id = Router.current().params._id;
     return _id == this._id ? 'active' : '';
+  },
+  people: function(){
+    ppl = [{name:'bengt'},{name:'pelle'},{name:'åke'},{name:'carl'},{name:'sven'}];
+    return ppl;
   }
 });
 
