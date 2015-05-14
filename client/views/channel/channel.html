@@ -2,7 +2,11 @@
   {{#contentFor 'header'}}
   <h1>{{channel.name}}</h1>
   {{/contentFor}}
-
+  <div id="gameboard">
+      {{#each people}}
+        <div class="picture"><p>{{url}}</p></div>
+      {{/each}} 
+  </div>
   <ul>
     {{#each messages}}
     {{#if date}}
@@ -19,7 +23,6 @@
     </li>
     {{/each}}
   </ul>
-
   {{#contentFor 'footer'}}
   {{> messageForm}}
   {{/contentFor}}

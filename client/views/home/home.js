@@ -18,10 +18,6 @@ Template.home.helpers({
   active: function() {
     var _id = Router.current().params._id;
     return _id == this._id ? 'active' : '';
-  },
-  people: function(){
-    ppl = [{url:'bengt'},{name:'pelle'},{name:'åke'},{name:'carl'},{name:'sven'}];
-    return ppl;
   }
 });
 
